@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables
+.env
+
+# Build output
+build/
+dist/
+
+# Logs
+*.log
+backend/logs/
+
+# ML training artifacts
+ml_service/results*/
+ml_service/logs/
+# Heavy Transformer model folders (too large for standard git)
+ml_service/models/category_model/
+ml_service/models/priority_model/
+ml_service/models/sentiment_model/
+ml_service/models/cat_model/
+ml_service/models/prio_model/
+ml_service/models/sent_model/
+ml_service/models/sentence_embedder/
+
+# But keep the light SKlearn/GBM models
+!ml_service/models/*.pkl
+
+# OS files
+.DS_Store
+Thumbs.db
+backend/server_log.txt
+
+# ML training checkpoints
+ml_service/results_cat/
+ml_service/results_prio/
+ml_service/results_sent/

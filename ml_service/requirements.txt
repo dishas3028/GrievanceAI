@@ -1,0 +1,13 @@
+transformers[torch]
+datasets
+torch
+scikit-learn
+sentence-transformers
+joblib
+pandas
+numpy
+fastapi
+uvicorn
+python-multipart
+tqdm
+pillow
